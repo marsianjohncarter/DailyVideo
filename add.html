@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daily Video</title>
+        <link rel="icon" type="image/x-icon" href="static/logos/favicon.ico">
+        <link href="static/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" href="static/add.css">
+
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Eighth navbar example">
+            <div class="container">
+                <a id="nav-icon" class="navbar-brand" href="#"><button class="btn btn-outline-secondary" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                        aria-controls="offcanvasWithBothOptions"><img src="static/logos/menu.png">
+                    </button></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a id="main-logo" href="index.html"><img src="static/logos/mainLogo.png" alt="Logo"></a>
+                <form method="POST" role="search">
+                    <div class="input-group mb-3">
+                        <input id="vid-search" class="form-control" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" id="searchBtn" type="submit">GO</button>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            </div>
+        </nav>
+
+
+        <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Try scrolling the rest of the page to see this option in action.</p>
+                <div class="d-grid gap-2">
+                    <a type="button" class="btn btn-outline-secondary" href="add.html">Add Video</a>
+                    <a href="login.html" type="button" class="login btn btn-outline-secondary">Login</a>
+                    <button href="index.html" type="button" class="home-link btn btn-outline-secondary">Home</button>
+                    <a href=""></a>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                </div>
+                <div class="account dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item active" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#"><button type="button"
+                                    class="btn btn-outline-danger">Danger</button>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="body-div">
+        <form class="top-50 start-50" id="vidAdd" action="Post">
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="vidName" class="col-form-label">Name Of Your Video</label>
+            </div>
+            <div class="col-auto">
+              <input name="vidName" type="text" id="vidName" class="form-control" aria-label="default input example">
+            </div>
+            <div class="col-auto">
+              <span id="passwordHelpInline" class="form-text">
+                Choose ANY name you want.
+              </span>
+            </div>
+          </div>
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="videoUpload" class="col-form-label">Upload Your Video</label>
+            </div>
+            <div class="col-auto">
+              <input name="videoUpload" class="form-control" placeholder="No file chosen" type="file" id="videoUpload" accept="video/*">
+            </div>
+            <div class="col-auto">
+              <span id="passwordHelpInline" class="form-text">
+                File <u>MUST</u> be video file.
+              </span>
+            </div>
+          </div>
+          <div class="row g-3 align-items-center hide">
+            <div class="col-auto">
+              <label for="videoUrl" class="col-form-label">URL Of Your Video</label>
+            </div>
+            <div class="col-auto">
+              <input name="videoUrl" type="text" id="videoUrl" class="form-control" aria-label="default input example">
+            </div>
+            <div class="col-auto">
+              <span id="passwordHelpInline" class="form-text">
+                Link your video from your YouTube account.
+              </span>
+            </div>
+          </div>
+          <div class="add-submit">
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+        </form>
+        
+              
+              
+            
+     
+            <div class="notification hide" id="myNotification">
+                <span class="closebtn">&times;</span>
+                <div class="notiBody">
+                    <p>Notification message..</p>
+                </div class="notiBody">
+                
+              </div>
+        </div>
+      </div>
+
+      
+      <footer>
+        <a target="_blank" href="https://icons8.com/icon/12371/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </footer>
+        <script src="js/bootsrap.js"></script>
+        <script src="js/add.js"></script>
+    </body>
+
+
+</html>

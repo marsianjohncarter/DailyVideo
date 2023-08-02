@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daily Video</title>
+        <link rel="icon" type="image/x-icon" href="static/logos/favicon.ico">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+
+
+        <link href="static/styles.css" rel="stylesheet">
+
+ 
+        <link rel="stylesheet" href="static/style.css">
+
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Eighth navbar example">
+            <div class="container">
+                <a id="nav-icon" class="navbar-brand" href="#"><button class="btn btn-outline-secondary" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                        aria-controls="offcanvasWithBothOptions"><img src="static/logos/menu.png">
+                    </button></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a id="main-logo" href="index.html"><img src="static/logos/mainLogo.png" alt="Logo"></a>
+                <!-- <video src="static/logos/header.mp4"></video> -->
+                <form method="POST" role="search">
+                    <div class="input-group mb-3">
+                        <input id="vid-search" class="form-control" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" id="searchBtn" type="submit">GO</button>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            </div>
+        </nav>
+
+
+        <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Try scrolling the rest of the page to see this option in action.</p>
+                <div class="d-grid gap-2">
+                <a href="add.html"><button type="button" class="btn btn-outline-secondary">Add Video</button></a>
+                <a href="sign-in.html" type="button" class="login btn btn-outline-secondary">Login</a>
+                <button href="index.html" type="button" class="home-link btn btn-outline-secondary">Home</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            </div>
+                <div class="account dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-outline-danger">Danger</button>
+                      </a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        <div class="body-div">
+        <div class="container">
+            <div class="main-video-content row">
+              
+            </div>
+
+
+        </div>
+    </div>
+    <div class="notification hide" id="myNotification">
+        <span class="closebtn">&times;</span>
+        <div class="notiBody">
+            <p>Notification message..</p>
+        </div class="notiBody">
+        
+      </div>
+
+
+      <footer>
+        Some icons provided by <a target="_blank" href="https://icons8.com">Icons8</a> 
+      </footer>
+        <script data-main="js/app.js" src="js/require.js"></script>
+        <script src="js/lazyLoading.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/bootsrap.js"></script>
+
+    </body>
+
+
+</html>
