@@ -137,7 +137,7 @@ window.addEventListener('DOMContentLoaded', () => {
           mainvideowrapperwrapper.classList.add('row');
           mainvideowrapperwrapper.append(mainVidWrapper);
           mainVid.classList.add('main-video');
-          getResource('http://localhost:3000/videos')
+          getResource('https://marsianjohncarter.github.io/DailyVideo/videoDB.json')
             .then(data => {
               data.forEach(element => {
                 if (element['id'] === +this.id) {
