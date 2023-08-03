@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     return await res.json();
   };
-  let videoData = getResource('http://localhost:3000/videos')
+  let videoData = getResource('https://my-json-server.typicode.com/marsianjohncarter/DailyVideo/videos')
     .then(data => {
       videos = data;
     });
