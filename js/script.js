@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   const divClass = 'col-lg-4 col-md-6 col-sm-7 p-2 videos-wrap';
-  const jsondata = getResource('https://my-json-server.typicode.com/marsianjohncarter/DailyVideo/videos')
+  const jsondata = getResource('https://marsianjohncarter.github.io/DailyVideo/videoDB.json')
     .then(jsondata => jsondata.reverse()).then(data => {
       data.forEach(({
         id,
@@ -93,7 +93,7 @@ window.addEventListener('DOMContentLoaded', () => {
           mainvideowrapperwrapper.classList.add('row');
           mainvideowrapperwrapper.append(mainVidWrapper);
           mainVid.classList.add('main-video');
-          getResource('https://my-json-server.typicode.com/marsianjohncarter/DailyVideo/videos')
+          getResource('https://marsianjohncarter.github.io/DailyVideo/videoDB.json')
             .then(data => {
               data.forEach(element => {
                 if (element['id'] === +this.id) {
