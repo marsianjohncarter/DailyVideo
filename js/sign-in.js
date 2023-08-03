@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const plainFormData = Object.fromEntries(formData.entries());
         const json = JSON.stringify(plainFormData);
         const userData = JSON.parse(json);
-        let allAccounts = getResource('http://localhost:3000/accounts')
+        let allAccounts = getResource('https://my-json-server.typicode.com/marsianjohncarter/DailyVideo/videos')
         .then(data => {
             data.forEach(account => {
                 if (userData['username'] == account.name) {
