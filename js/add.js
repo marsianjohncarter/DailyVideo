@@ -1,9 +1,5 @@
 'use strict';
-const fs = require('fs');
-fs.writeFile('output.txt', 'Hello World.', err => {
-    if (err) console.error(err);
-    else console.log('Data written to file successfully.');
-});
+
 window.addEventListener('DOMContentLoaded', () => {
 
 
@@ -48,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     };
     function showlastId () {
-        const jsonData = getResource('https://marsianjohncarter.github.io/DailyVideo/videoDB.json')
+        const jsonData = getResource('../videoDB.json')
         .then(data => {
             // data = data.json();
             let name = data[data.length -1].id;
@@ -63,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
         notificationBody.appendChild(spinner);
         let file = chooseFileInput.files[0];
         let fileName = file.name;
-        const jsonData = getResource('https://marsianjohncarter.github.io/DailyVideo/videoDB.json')
+        const jsonData = getResource('../videoDB.json')
         .then(data => {
             // data = data.json();
             const name = data.seats[data.seats.length-1].id;
@@ -108,7 +104,7 @@ window.addEventListener('DOMContentLoaded', () => {
             "link": `videos/${filename}`,
             "date": `${date}`,
         });
-        postData('https://marsianjohncarter.github.io/DailyVideo/videoDB.json', json)
+        postData('../videoDB.json', json)
      
 
         console.log(json);
