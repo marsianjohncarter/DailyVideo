@@ -122,7 +122,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         videoAttr.classList.add("vidAttr");
 
-        videoAttr.innerHTML += `<div class="details"><div class="author"></div><div class="title"><h3>${name}</h3><a href=""><img class="desc" src="user_icons/Programmer.png" alt="" />${poster}</a><span> ${watched} ${views} • ${posted[0]} ${posted[1]} ago </span></div></div>`;
+        videoAttr.innerHTML += `<div class="details"><div class="author"></div><div class="title"><h3>${name}</h3><a href=""><img class="desc" src="user_icons/Programmer.png" alt="" />${poster}</a><span>${posted[0]} ${posted[1]} ago </span></div></div>`;
         video.setAttribute('data-src', link);
         video.src = `${link}`
         video.setAttribute('id', id);
