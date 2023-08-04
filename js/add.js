@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     };
     function showlastId () {
-        const jsonData = getResource('/videoDB.json')
+        const jsonData = getResource('/DailyVideo/videoDB.json')
         .then(data => {
             // data = data.json();
             let name = data[data.length -1].id;
@@ -104,7 +104,7 @@ window.addEventListener('DOMContentLoaded', () => {
             "link": `videos/${filename}`,
             "date": `${date}`,
         });
-        postData('/videoDB.json', json)
+        postData('/DailyVideo/videoDB.json', json)
      
 
         console.log(json);
