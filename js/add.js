@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     };
     function showlastId () {
-        const jsonData = getResource('https://marsianjohncarter.github.io/DailyVideo/videoDB.json/videos')
+        const jsonData = getResource('https://marsianjohncarter.github.io/DailyVideo/videoDB.json')
         .then(data => {
             // data = data.json();
             let name = data[data.length -1].id;
@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
         notificationBody.appendChild(spinner);
         let file = chooseFileInput.files[0];
         let fileName = file.name;
-        const jsonData = getResource('https://marsianjohncarter.github.io/DailyVideo/videoDB.json/videos')
+        const jsonData = getResource('https://marsianjohncarter.github.io/DailyVideo/videoDB.json')
         .then(data => {
             // data = data.json();
             const name = data.seats[data.seats.length-1].id;
@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', () => {
             "link": `videos/${filename}`,
             "date": `${date}`,
         });
-        postData('https://marsianjohncarter.github.io/DailyVideo/videoDB.json/videos', json)
+        postData('https://marsianjohncarter.github.io/DailyVideo/videoDB.json', json)
      
 
         console.log(json);
@@ -118,9 +118,6 @@ window.addEventListener('DOMContentLoaded', () => {
         closeNotification();
     });
 
-    // Obj = {
-
-    // }
 
 
 
