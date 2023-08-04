@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     };
     function showlastId () {
-        const jsonData = getResource('../videoDB.json')
+        const jsonData = getResource('/videoDB.json')
         .then(data => {
             // data = data.json();
             let name = data[data.length -1].id;
@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
         notificationBody.appendChild(spinner);
         let file = chooseFileInput.files[0];
         let fileName = file.name;
-        const jsonData = getResource('../videoDB.json')
+        const jsonData = getResource('/videoDB.json')
         .then(data => {
             // data = data.json();
             const name = data.seats[data.seats.length-1].id;
@@ -104,7 +104,7 @@ window.addEventListener('DOMContentLoaded', () => {
             "link": `videos/${filename}`,
             "date": `${date}`,
         });
-        postData('../videoDB.json', json)
+        postData('/videoDB.json', json)
      
 
         console.log(json);
